@@ -26,6 +26,10 @@
 		<meta property="og:description" content="Senior UI/UX designer with 13+ years' experience in mobile & desktop design. Expert in research, prototyping, testing. Helped 30+ teams succeed.">
 		<meta property="og:image" content="https://vnn.io/og-image.png">
 		<style>
+			:root {
+                --spacing-main: 2rem;
+                --spacing-huge: 4rem;
+            }
 			/* Base & Reset */
 			body {
 			font: 400 1rem/1.4 "Geist Mono", monospace;
@@ -50,6 +54,7 @@
 			main { margin-bottom: 2rem }
 			li { margin-bottom: 1rem }
 			p { margin: 2rem 0 }
+			section { margin-bottom: var(--spacing-main) }
 
 			/* Components */
 			.button {
@@ -90,22 +95,33 @@
 			clip: rect(0,0,0,0);
 			border: 0;
 			}
-			img {
+			.button img {
 			width: 0.6rem;
 			height: auto;
 			margin-left: 0.8rem;
 			}
-
+			
+			.social { display: flex; gap: 1.5rem }
+			.social img { width: 1rem }
+			footer {
+				margin-top: var(--spacing-main)
+			}
 			/* Responsive */
 			@media (min-width: 768px) {
+			:root {
+                --spacing-main: 8rem;
+                --spacing-huge: 12rem;
+            }
 			body { font-size: 2rem }
 			.wrapper { padding: 0 2rem }
 			.button { padding: 0.2rem 0.8rem }
-			main { margin-bottom: 5.23rem }
-			img { width: 1.25rem; margin-left: 1.5rem }
+			main { margin-bottom: 0rem }
+			.button img { width: 1.25rem; margin-left: 1.5rem }
 			h1 { font-size: 8.5rem; margin: 5.23rem 0 }
 			p { margin: 4rem 0 }
 			li { margin-bottom: 2rem }
+			.social { gap: 3rem }
+			.social img { width: 2rem }
 			}
 		</style>
     </head>
@@ -133,7 +149,6 @@
 					</p>
 				<p>
 					<span class="highlight">I believe in</span> software that disappears into the background, interfaces that reward attention, and products that age gracefully.
-				<br><br>
 				</p>
 			</section>
 
@@ -141,13 +156,28 @@
 				<h2 class="sr-only">Contact</h2>
 				<ul>
 					<li>
-						<a class="button grayscale" href="https://linkedin.com/in/vtantardini/">Linkedin<img src="/arrow-up-right-light.svg" alt="External link" width="20" height="20" loading="lazy"></a>
+						<a class="button grayscale" href="https://linkedin.com/in/vtantardini/">Let's chat<img src="/arrow-up-right-light.svg" alt="External link" width="20" height="20" loading="lazy"></a>
 					</li>
 					<li>
 						<a class="button grayscale" href="mailto:&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;">Email<img src="/arrow-up-right-light.svg" alt="External link" width="20" height="20" loading="lazy"></a>
 					</li>
 				</ul>
 			</section>
+
+			<footer>
+				<ul class="social">
+					<li>
+						<a href="https://x.com/ydstmw" title="Vincent Tantardini Twitter Profile">
+							<img src="/lib/img/icn-twitter.svg" alt="External link" width="32" height="32" loading="lazy">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/vincenttantardini/" title="Vincent Tantardini Instagram Profile">
+							<img src="/lib/img/icn-instagram.svg" alt="External link" width="32" height="32" loading="lazy">
+						</a>
+					</li>
+				</ul>
+			</footer>
 		</main>
         <script defer src="/load_schema.js" fetchpriority="low"></script>
         <script defer src="https://www.googletagmanager.com/gtag/js?id=G-6N2MP1633D" fetchpriority="low"></script>
