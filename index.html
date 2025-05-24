@@ -10,9 +10,8 @@
 		<link rel="canonical" href="https://vnn.io/" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&family=Geist:wght@400..700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-        <!-- <link rel="shortcut icon" href="/favicon.ico"/> -->
-        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
+		<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <link rel="shortcut icon" href="/favicon.ico"/>
         <meta name="theme-color" content="#000" />
 		<style>
 			body {
@@ -24,8 +23,9 @@
 				color: #b3b3b3;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
-				font-size: 2rem;
+				font-size: 1rem;
 			}
+
             *,
             ::after,
             ::before {
@@ -37,15 +37,35 @@
 			}
 
 			.wrapper {
-				padding: 0 2rem;
+				padding: 0 1rem;
 			}
 
 			a {
-				padding: .25rem 1rem;
+				padding: .1rem 0.3rem;
 				background: #EBFF8E;
 				border-radius: 1rem;
 				text-decoration: none;
 				color: black;
+			}
+
+			li,
+            ul {
+                list-style: none;
+            }
+			ul { padding: 0}
+
+			@media (min-width: 768px) {
+				body {
+					font-size: 2rem;
+				}
+				.wrapper {
+					padding: 0 2rem;
+				}
+
+				a {
+					padding: .25rem 1rem;
+					border-radius: 2rem;
+				}
 			}
 		</style>
     </head>
