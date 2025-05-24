@@ -64,6 +64,14 @@
 				z-index: -1; /* places it behind the content */
 			}
 
+			.button.grayscale::after {
+				background: #333;
+			}
+
+			.button.grayscale {
+				color: white;
+			}
+
 			li,
             ul {
                 list-style: none;
@@ -128,18 +136,15 @@
 
 		<main class="wrapper">
 			<section>
-				<h2>About</h2>
+				<h2>About <span class="sr-only">Vincent Tantardini</span></h2>
 				<p>
-					Curiosity has always been my compass. Whether in design, development, or documentation, I’m drawn to the in-between spaces—where technology meets craft, and where ideas begin to take form. My journey has spanned digital product
-					design, front-end engineering, and photography, with each discipline informing the next. I’m interested in tools that don’t just work, but resonate. Tools that feel like extensions of the way we think, create, and observe the
-					world.
+					In design, development, or documentation, I’m drawn to the in-between—where technology meets craft and ideas take shape. My path spans product design, front-end engineering, and photography, each informing the next. I’m interested in tools that not only work but resonate—extensions of how we think, create, and observe the world.
 				</p>
 				<p>
 					In recent years, I’ve focused much of my energy on building 
 					<a class="button" href="https://withframes.com/" title="Frames: Analog Photography Notebook App">
 						Frames<img src="/arrow-up-right.svg" alt="External link" width="20" height="20" loading="lazy"></a>, a thoughtfully crafted app for film photographers to log, organize, and reflect on their analog shooting process.
-					What started as a personal need became a full-featured ecosystem for photographers who still shoot on celluloid but live in a digital world. Frames is a notebook for the modern film shooter, combining metadata capture,
-					geotagging, image attachment, and export options—all designed with the tactile, deliberate nature of analog photography in mind.
+					What started as a personal need became a full-featured ecosystem for photographers who still shoot on film but live in a digital world. 
 				</p>
 				<p>
 					I believe in software that disappears into the background, interfaces that reward attention, and products that age gracefully.
@@ -148,16 +153,16 @@
 			</section>
 
 			<section>
-				<h2>Contact</h2>
+				<h2 class="sr-only">Contact</h2>
 				<ul>
 					<li>
-						<p><a class="button" href="mailto:&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;">&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;<img src="/plus.svg" alt="External link" width="20" height="20" loading="lazy" /></a> Email</p>
+						<p><a class="button grayscale" href="mailto:&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;">&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;</a> Email</p>
 					</li>
 					<li>
-						<p><a class="button" href="https://linkedin.com/in/vtantardini/">@vtantardini<img src="/arrow-up-right.svg" alt="External link" width="20" height="20" loading="lazy" /></a> Linkedin</p>
+						<p><a class="button grayscale" href="https://linkedin.com/in/vtantardini/">@vtantardini</a> Linkedin</p>
 					</li>
 					<li>
-						<p><a class="button" href="https://dribbble.com/vt">@vt<img src="/arrow-up-right.svg" alt="External link" width="20" height="20" loading="lazy" /></a> Dribbble</p>
+						<p><a class="button grayscale" href="https://dribbble.com/vt">@vt</a> Dribbble</p>
 					</li>
 				</ul>
 			</section>
