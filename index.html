@@ -6,9 +6,6 @@
         <title>Vincent Tantardini | Product Designer</title>
         <meta name="description" content="Senior UI/UX designer with 13+ years' experience in mobile & desktop design. Expert in research, prototyping, testing. Helped 30+ teams succeed.">
 		<link rel="canonical" href="https://vnn.io/">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
         <link rel="shortcut icon" href="/lib/img/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="/lib/img/apple-touch-icon.png">
         <meta name="theme-color" content="#000">
@@ -30,23 +27,29 @@
             }
 			/* Base & Reset */
 			body {
-			font: 400 1.0625rem/1.44 "Geist Mono", monospace;
+			font: 400 1.0625rem/1.5 monospace;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-optical-sizing: auto;
 			background: #000;
 			color: #b3b3b3;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
+			padding: 0 1rem;
 			}
 			*, ::after, ::before { box-sizing: border-box; text-decoration: none }
 			ul { padding: 0; list-style: none }
 
 			/* Typography */
 			h1, .highlight, a { color: #fff }
+			h1 {
+				margin: 0.5rem 0 7.5rem;
+				text-align: center;
+			}
 
 			/* Layout */
 			.wrapper {
-			max-width: 71.25rem;
-			padding: 0 0.5rem;
+			max-width: 30rem;
+			margin: 0 auto;
 			}
 			main { margin-bottom: 2rem }
 			li { margin-bottom: 1rem }
@@ -98,41 +101,31 @@
 			margin-left: 0.8rem;
 			}
 			
-			.social { display: flex; gap: 2rem }
+			.social { display: flex; gap: 2rem; margin-top: 5rem }
 			.social img { width: 1.2rem }
 			footer {
 				margin-top: var(--spacing-main)
 			}
-			/* Responsive */
-			@media (min-width: 768px) {
-			:root {
-                --spacing-main: 8rem;
-                --spacing-huge: 12rem;
-            }
-			body { font-size: 2rem }
-			.wrapper { padding: 0 2rem }
-			.button { padding: 0.2rem 0.8rem }
-			main { margin-bottom: 0rem }
-			.button img { width: auto; margin-left: 1.5rem }
-			h1 { font-size: 8.5rem; margin: 5.23rem 0 }
-			p { margin: 4rem 0 }
-			li { margin-bottom: 1.5rem }
-			.social { gap: 3rem }
-			.social img { width: 2rem }
+			.logo {
+				width: 12px;
+				height: auto;
+			}
+			.main {
+				margin: 7.5rem auto;
 			}
 		</style>
     </head>
 
     <body>
 		<header class="wrapper">
-			<h1>
+			<h1 class="sr-only">
 				<a href="https://vnn.io/">
-					~/ <span class="sr-only">Vincent Tantardini, Product Designer</span>
+					<span>Vincent Tantardini, Product Designer</span>
 				</a>
 			</h1>
 		</header>
 
-		<main class="wrapper">
+		<main class="wrapper main">
 			<section>
 				<h2 class="sr-only">About Vincent Tantardini</h2>
 				<p><span class="highlight">Curiosity has always been my compass.</span> Whether in design, development, or documentation, I’m drawn to the in-between spaces—where technology meets craft, and where ideas begin to take form. My journey has spanned digital product design, front-end engineering, and photography, with each discipline informing the next. I’m interested in tools that don’t just work, but resonate. Tools that feel like extensions of the way we think, create, and observe the world.
