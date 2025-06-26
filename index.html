@@ -23,60 +23,47 @@
 		<meta property="og:image" content="https://vnn.io/og-image.png">
 		<style>
 			body {
-				font: 400 1.0625rem/1.5 monospace;
-				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font: 400 1.0625rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 				font-optical-sizing: auto;
-				background: #000;
-				color: #b3b3b3;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
+				background: #000;
+				color: #b3b3b3;
 				margin: 7.5rem 1rem;
 			}
 			*, ::after, ::before { box-sizing: border-box; text-decoration: none }
 			ul { padding: 0; list-style: none }
-			h1, .highlight, a { color: #fff }
-			h1 {
-				margin: 0;
-				line-height: 1;
-			}
+			h1, .highlight, a { color: #fff; margin: 0; }
 
-			/* Layout */
 			.wrapper {
 				max-width: 30rem;
 				margin: 0 auto;
 			}
 			p { margin: 2rem 0 }
 
-			/* Components */
 			.button {
 				position: relative;
 				display: flex;
 				align-items: center;
 				padding: 0 0.75rem;
-				color: #000;
 				z-index: 1;
 				overflow: hidden;
-				background: white;
 				border-radius: 9999px;
 				font-family: monospace;
 				font-size: 15px;
 				height: 2rem;
-			}
-			.button.round {
-				padding: 0 0.4rem;
-			}
-			.button.grayscale {
 				background: #000;
 				border: 1px solid rgb(51, 51, 51);
 				color: white;
+			}
+			.button.round {
+				padding: 0 0.4rem;
 			}
 			.button img.ext {
 				width: 0.6rem;
 				height: auto;
 				margin-left: 1rem;
 			}
-
-			/* Utilities */
 			.sr-only {
 				position: absolute;
 				width: 1px;
@@ -96,11 +83,9 @@
 				margin: 5rem auto;
 			}
 			.logo {
+				display: block;
 				width: 24px;
 				height: auto;
-			}
-			header {
-				position: sticky;
 			}
 		</style>
     </head>
@@ -137,12 +122,12 @@
 			<h2 class="sr-only">Contact Vincent Tantardini</h2>
 			<ul class="contact">
 				<li>
-					<a class="button grayscale round" href="mailto:&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;">
+					<a class="button round" href="mailto:&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;">
 						<img src="/lib/img/icn/icn-envelope.svg" alt="Email" loading="lazy">
 					</a>
 				</li>
 				<li>
-					<a class="button grayscale" href="https://withframes.com/" title="Frames: Analog film Photography Notes App">
+					<a class="button" href="https://withframes.com/" title="Frames: Analog film Photography Notes App">
 						Frames<img src="/lib/img/icn/arrow-up-right-light.svg" alt="External link" width="20" height="20" class="ext" loading="lazy"></a>
 				</li>
 			</ul>
