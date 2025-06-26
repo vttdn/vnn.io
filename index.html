@@ -63,29 +63,18 @@
 			/* Components */
 			.button {
 			position: relative;
-			padding: 0.25rem 0.5rem;
+			padding: 0.35rem 0.75rem;
 			color: #000;
 			z-index: 1;
 			overflow: hidden;
+			background: white;
+			border-radius: 9999px;
+			font-size: 0.9375rem;
 			}
-			.button::after {
-			content: "";
-			position: absolute;
-			top: 0.25rem;
-			bottom: 0.25rem;
-			left: 0;
-			width: 100%;
-			background: #fff;
-			border-radius: 1.5rem;
-			z-index: -1;
-			}
+			
 			.button.grayscale {
-			color: #fff;
-			}
-			.button.grayscale::after {
 			background: #333;
-			top: 0.125rem;
-			bottom: 0.125rem;
+			color: white;
 			}
 
 			/* Utilities */
@@ -102,12 +91,16 @@
 			.button img {
 			width: 0.6rem;
 			height: auto;
-			margin-left: 0.8rem;
+			margin-left: 1rem;
 			}
 			
 			.social { display: flex; gap: 2rem; margin-top: 5rem }
 			.social img { width: 1.2rem }
-			.contact { margin-top: 5rem }
+			.contact {
+				display: flex;
+				gap: 1rem;
+				margin-top: 5rem;
+			}
 			footer {
 				margin-top: var(--spacing-main)
 			}
@@ -137,8 +130,7 @@
 				</p>
 				<p>
 					<span class="highlight">In recent years, </span>I’ve focused much of my energy on building
-					<a class="button" href="https://withframes.com/" title="Frames: Analog Photography Notebook App">
-						Frames<img src="/lib/img/icn/arrow-up-right.svg" alt="External link" width="20" height="20" loading="lazy"></a>, a thoughtfully crafted app for film photographers to log, organize, and reflect on their analog shooting process.
+					Frames, a thoughtfully crafted app for film photographers to log, organize, and reflect on their analog shooting process.
 						What started as a personal need became a full-featured ecosystem for photographers who still shoot on celluloid but live in a digital world.
 						Frames is a notebook for the modern film shooter, combining metadata capture, geotagging, image attachment, and export options—all designed with the tactile, deliberate nature of analog photography in mind.
 					</p>
@@ -151,7 +143,8 @@
 				<h2 class="sr-only">Contact Vincent Tantardini</h2>
 				<ul class="contact">
 					<li>
-						<a class="button grayscale" href="https://linkedin.com/in/vtantardini/">Let's chat<img src="/lib/img/icn/arrow-up-right-light.svg" alt="External link" width="20" height="20" loading="lazy"></a>
+						<a class="button" href="https://withframes.com/" title="Frames: Analog Photography Notebook App">
+							Frames<img src="/lib/img/icn/arrow-up-right.svg" alt="External link" width="20" height="20" loading="lazy"></a>
 					</li>
 					<li>
 						<a class="button grayscale" href="mailto:&#118;&#64;&#118;&#110;&#110;&#46;&#105;&#111;">Email<img src="/lib/img/icn/arrow-up-right-light.svg" alt="External link" width="20" height="20" loading="lazy"></a>
