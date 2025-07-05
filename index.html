@@ -57,6 +57,7 @@
 				background: rgb(20,20,20);
 				color: rgba(255, 255, 255, 0.64);
                 text-align: center;
+                transition: all .33s ease-in-out;
 			}
 			.button:hover {
 				background: rgb(30,30,30);
@@ -119,7 +120,7 @@
 				width: 100%;
 				justify-content: space-between;
 				padding: 200px 56px 80px;
-				color: rgba(255, 255, 255, 0.64);
+				color: rgba(242, 243, 253, 0.56);
 			}
 			.section-footer {
 				display:flex;
@@ -165,7 +166,7 @@
     <body>
 		<header>
 			<h1>
-				<a href="https://vnn.io/" title="Vincent Tantardini, Product Designer" class="logo">
+				<a href="https://vnn.io/" class="logo">
 					<svg width="194" height="194" viewBox="0 0 194 194" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M115.476 157.048L97 194L0 0H194L175.524 36.9524L157.048 0H36.9524L115.476 157.048Z" fill="white" style="fill:white;fill-opacity:1;"/>
 					</svg>
@@ -221,9 +222,9 @@
     
     // Initially hide the section footer and footer
     sectionFooter.style.opacity = '0';
-    sectionFooter.style.transition = 'opacity 0.5s ease-in-out';
+    sectionFooter.style.transition = 'opacity 0.33s ease-in-out';
     footer.style.opacity = '0';
-    footer.style.transition = 'opacity 0.5s ease-in-out';
+    footer.style.transition = 'opacity 0.33s ease-in-out';
     
     // Get the HTML content
     const originalHTML = targetParagraph.innerHTML;
