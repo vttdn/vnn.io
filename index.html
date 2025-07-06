@@ -196,6 +196,8 @@ footer {
   height: 2rem;
   cursor: pointer;
   z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.15s ease;
 }
 
 .dropdown-button span {
@@ -279,6 +281,11 @@ footer {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+}
+
+/* Button opacity when dropdown is open */
+#dropdown-toggle:checked ~ .dropdown-button {
+  opacity: 0.5;
 }
 
 /* Hide the checkbox */
