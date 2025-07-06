@@ -22,171 +22,163 @@
 		<meta property="og:description" content="Senior UI/UX designer with 13+ years' experience in mobile & desktop design. Expert in research, prototyping, testing. Helped 30+ teams succeed.">
 		<meta property="og:image" content="https://vnn.io/og-image.png">
 		<style>
-            @font-face{
+        @font-face {
             font-family: "SuisseIntl-Regular";
-            src: url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.eot");
-            src: url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix")format("embedded-opentype"),
-                url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.woff")format("woff"),
-                url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.woff2")format("woff2"),
-                url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.ttf")format("truetype"),
-                url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.svg#SuisseIntl-Regular")format("svg");
-            font-weight:normal;
-            font-style:normal;
-            font-display:swap;
+            src: url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"),
+                 url("lib/fonts/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
         }
-			html { -webkit-text-size-adjust: 100% }
-			body {
-				font: 400 1.625rem/130% "SuisseIntl-Regular", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
-				background: #000;
-				color: rgba(244, 242, 250, 0.813);
-				margin: 0;
-			}
-			*, ::after, ::before { box-sizing: border-box; text-decoration: none }
-            ul, li { list-style: none }
-			ul, p { margin: 0; padding: 0; }
 
-			h1, .highlight, a { color: #fff; margin: 0; }
+        html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
-			.wrapper {
-				max-width: 880px;
-				width: calc(100vw - 40px);
-			}
+body {
+    font: 400 1.625rem/130% "SuisseIntl-Regular", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #000;
+    color: rgba(244, 242, 250, 0.813);
+    margin: 0;
+}
 
-			.spacer {
-				display:block;
-				height: 1.25rem;
-			}
+*, ::after, ::before { box-sizing: border-box; text-decoration: none }
 
-			.button {
-				position: relative;
-				display: inline-flex;
-				align-items: center;
-				padding: 6px 16px;
-				border-radius: 9999px;
-				/* background: rgba(242, 242, 250, 0.08); */
-				background: rgb(26,26,26);
-				color: rgba(255, 255, 255, 0.64);
-                text-align: center;
-                transition: all .33s ease-in-out;
-			}
-			.button:hover {
-				background: rgb(34,34,34);
-			}
-			.button.clear-bg {
-				background: none;
-				color: rgba(242, 243, 253, 0.48);
-			}
-            .button.clear-bg:hover {
-				color: rgba(255, 255, 255, 0.64);
-            }
-			.button img.ext {
-				width: 0.6rem;
-				height: auto;
-				margin-left: 1rem;
-			}
-			.button.large {
-				height: 3.5rem;
-				padding: 0 28px;
-				font-size: 20px;
-                gap: .75rem;
-			}
-            .button.large svg {
-                fill: rgba(255, 255, 255, 0.56);
-            }
-			.sr-only {
-				position: absolute;
-				width: 1px;
-				height: 1px;
-				padding: 0;
-				margin: -1px;
-				overflow: hidden;
-				clip: rect(0,0,0,0);
-				border: 0;
-			}
-			main {
-                width:100%;
-				margin: 42vh 0 0;
-                padding: 0 1.25rem;
-			}
+ul, li { list-style: none }
+ul, p, h1 { margin: 0; padding: 0 }
 
-			header {
-				position: relative;
-				width: 100%;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: .5rem 1rem .5rem .5rem;
-				z-index: 2;
-			}
-			nav, footer {
-				display:flex;
-				gap: .5rem;
-				align-items: center;
-				justify-content: center;
-				font-size: .875rem;
-				line-height: 1.25rem;
-			}
-			footer {
-				width: 100%;
-				justify-content: space-between;
-				padding: 200px 20px 40px;
-				color: rgba(242, 243, 253, 0.56);
-			}
-			.section-footer {
-				display:flex;
-				gap: 2rem;
-				align-items: center;
-				font-size: .875rem;
-				line-height: 1.25rem;
-				font-size: 20px;
-				color: rgba(242, 243, 253, 0.48);
-                margin-top: 3.75rem;
-			}
-			.logo {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 48px;
-				height: 48px;
-			}
-			.logo svg {
-				width: 14px;
-				height: auto;
-			}
-			header {
-				position: fixed;
-				top: 0;
-				
-			}
-			.overlay {
-				background: rgba(0, 0, 0, 0) linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 80%) repeat scroll 0% 0% / auto padding-box border-box;
-                background-position: 0% 0%;
-                display: block;
-                height: 96px;
-                inset: 0px 0px 386px;
-                pointer-events: none;
-                position: fixed;
-                tab-size: 4;
-                width: 100%;
-                z-index: 1;
-			}
+h1, .highlight, a { color: #fff }
 
-            @media (min-width: 768px) {
-                body {
-                    font-size: 1.75rem;
-                }
-                main {
-                    padding: 0 56px;
-                }
-                header {
-                    padding: .5rem 2rem .5rem .5rem;
-                }
-                footer {
-                    padding: 200px 56px 80px;
-                }
-            }
+.wrapper {
+    max-width: 880px;
+    width: calc(100vw - 40px);
+}
+
+.spacer {
+    display: block;
+    height: 1.25rem;
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    background: rgb(26,26,26);
+    color: rgba(255, 255, 255, 0.64);
+    text-align: center;
+    transition: all .33s ease-in-out;
+    backdrop-filter: blur(8px);
+}
+
+.button:hover { background: rgb(34,34,34) }
+
+.button.clear-bg {
+    background: none;
+    color: rgba(242, 243, 253, 0.48);
+}
+
+.button.clear-bg:hover { color: rgba(255, 255, 255, 0.64) }
+
+.button img.ext {
+    width: 0.6rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.button.large {
+    height: 3.5rem;
+    padding: 0 28px;
+    font-size: 20px;
+    gap: .75rem;
+}
+
+.button.large svg { fill: rgba(255, 255, 255, 0.56) }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+main {
+    width: 100%;
+    margin: 42vh 0 0;
+    padding: 0 1.25rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem .5rem .5rem;
+    z-index: 2;
+}
+
+nav, footer {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+footer {
+    width: 100%;
+    justify-content: space-between;
+    padding: 200px 20px 40px;
+    color: rgba(242, 243, 253, 0.56);
+}
+
+.section-footer {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.25rem;
+    color: rgba(242, 243, 253, 0.48);
+    margin-top: 3.75rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.logo svg {
+    width: 14px;
+    height: auto;
+}
+
+.overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 80%);
+    height: 96px;
+    position: fixed;
+    inset: 0 0 386px;
+    pointer-events: none;
+    width: 100%;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    body { font-size: 1.75rem }
+    main { padding: 0 56px }
+    header { padding: .5rem 2rem .5rem .5rem }
+    footer { padding: 200px 56px 80px }
+}
 		</style>
     </head>
 
