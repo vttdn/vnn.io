@@ -28,6 +28,8 @@
                 --color-bg-gray-1: rgb(36,36,36);
                 --color-bg-gray-2: rgb(48,48,48);
                 --color-bg-gray-3: rgb(72,72,72);
+                --color-fill-light1: #fff;
+                --color-fill-light2: rgba(255,255,255,.88);
             }
         @font-face {
             font-family: "frames-sans";
@@ -45,7 +47,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #000;
-    color: rgba(255, 255, 255, .88);
+    color: var(--color-fill-light2);
     margin: 0;
 }
 
@@ -71,19 +73,12 @@ ul, p, h1 { margin: 0; padding: 0 }
     padding: 5px 14px;
     border-radius: 9999px;
     background: var(--color-bg-gray-1);
-    color: rgba(255, 255, 255, .8);
+    color: var(--color-fill-light2);
     text-align: center;
     backdrop-filter: blur(8px);
 }
 
 .button:hover { background: var(--color-bg-gray-2) }
-
-.button.clear-bg {
-    background: none;
-    color: rgba(255, 255, 255, 0.48);
-}
-
-.button.clear-bg:hover { color: rgba(255, 255, 255, 0.64) }
 
 .button img.ext {
     width: 0.6rem;
@@ -260,7 +255,7 @@ footer {
   padding-right: 1.25rem;
   font-size: .975rem;
   text-align: left;
-  color: rgba(255, 255, 255, .8);
+  color: var(--color-fill-light2);
 }
 
 .divider {
@@ -271,7 +266,8 @@ footer {
 .dropdown-content svg {
   width: 16px;
   height: auto;
-  fill: rgba(255, 255, 255, .8);
+  fill: var(--color-fill-light2);
+  opacity: .9;
 }
 
 .dropdown-content a span:first-of-type {
