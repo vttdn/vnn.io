@@ -25,9 +25,9 @@
 		<meta property="og:image" content="https://vnn.io/og-image.png">
 		<style>
             :root {
-                --color-bg-gray-1: rgb(36,36,36);
-                --color-bg-gray-2: rgb(48,48,48);
-                --color-bg-gray-3: rgb(72,72,72);
+                --color-bg-gray-1: rgba(255, 255, 255, 0.141);
+                --color-bg-gray-2: rgba(255, 255, 255, 0.188);
+                --color-bg-gray-3: rgba(255, 255, 255, 0.282);
                 --color-fill-light1: rgba(255,255,255,.96);
                 --color-fill-light2: rgba(255,255,255,.88);
                 --color-fill-light3: rgba(255,255,255,.48);
@@ -220,7 +220,6 @@ footer {
   border-radius: 12px;
   padding: 0 0;
   overflow: hidden;
-  background: var(--color-bg-gray-1);
   z-index: 1;
   
   /* iOS-style scaling animation */
@@ -259,11 +258,12 @@ footer {
   font-size: .975rem;
   text-align: left;
   color: var(--color-fill-light2);
+  background: var(--color-bg-gray-1);
 }
 
 .divider {
   height: 8px;
-  background: rgb(28,28,28);
+  background: rgba(255, 255, 255, 0.110);
 }
 
 .dropdown-content svg {
