@@ -1,29 +1,65 @@
 {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "name": "Vincent Tantardini",
-        "url": "https://vnn.io/",
-        "image": "https://vnn.io/apple-touch-icon.png",
-        "sameAs": [
-          "https://x.com/ydstmw",
-          "https://github.com/vttdn",
-          "https://unsplash.com/@vnn",
-          "https://dribbble.com/vt",
-          "https://linkedin.com/in/vtantardini",
-          "https://pinterest.com/vtantardini",
-          "https://www.instagram.com/vincenttantardini/",
-          "https://www.youtube.com/@vnn_",
-          "https://apps.apple.com/developer/vincent-tantardini/id1805803567"
-        ],
-        "description": "Senior UI/UX designer with 13+ years' experience in mobile & desktop design. Expert in research, prototyping, testing. Helped 30+ teams succeed.",
-        "jobTitle": "Product Designer"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Vincent Tantardini",
+      "url": "https://vnn.io/",
+      "image": "https://vnn.io/apple-touch-icon.png",
+      "email": "v@vnn.io",
+      "jobTitle": "Founder & Product Designer",
+      "description": "Senior UI/UX designer with 13+ years' experience in mobile & desktop design. Expert in research, prototyping, testing. Helped 30+ teams succeed. Founder of Frames.",
+      "knowsAbout": [
+        "UI/UX Design",
+        "Product Design",
+        "Mobile Design",
+        "Desktop Design",
+        "User Research",
+        "Prototyping",
+        "User Testing",
+        "Frontend Development",
+        "iOS Development",
+        "Android Development",
+        "Photography Apps"
+      ],
+      "sameAs": [
+        "https://x.com/ydstmw",
+        "https://github.com/vttdn",
+        "https://unsplash.com/@vnn",
+        "https://dribbble.com/vt",
+        "https://linkedin.com/in/vtantardini",
+        "https://pinterest.com/vtantardini",
+        "https://www.instagram.com/vincenttantardini/",
+        "https://www.youtube.com/@vnn_",
+        "https://apps.apple.com/developer/vincent-tantardini/id1805803567"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Frames",
+        "url": "https://withframes.com",
+        "description": "Film Photography app, notes and metadata"
       },
-      {
-        "@type": "WebSite",
-        "name": "vnn.io",
-        "url": "https://vnn.io/"
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Product Designer & Founder",
+        "occupationLocation": {
+          "@type": "Place",
+          "name": "Remote"
+        },
+        "description": "Senior UI/UX designer specializing in mobile and desktop design with expertise in user research, prototyping, and testing. Founder of Frames photography app."
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "name": "vnn.io",
+      "url": "https://vnn.io/",
+      "description": "Vincent Tantardini's personal website - Product Designer & Founder of Frames",
+      "author": {
+        "@type": "Person",
+        "name": "Vincent Tantardini"
+      },
+      "dateModified": "2025-07-08",
+      "inLanguage": "en-US"
+    }
+  ]
+}
